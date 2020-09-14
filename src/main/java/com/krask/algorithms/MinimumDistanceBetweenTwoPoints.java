@@ -41,10 +41,12 @@ public class MinimumDistanceBetweenTwoPoints {
 
         List<Point> sortedByXPoints = qSortByX(points);
 
-        System.out.println("Minimum distance: " + findMinDistance(sortedByXPoints));
+        double d = findMinDistance(sortedByXPoints);
+
+        System.out.println("Minimum distance: " + d);
         //System.out.println("Minimum distance (bruteForce - for check) : " + bruteForce(sortedByXPoints));
 
-        return 0;
+        return d;
     }
 
 
